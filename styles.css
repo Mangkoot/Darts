@@ -1,5 +1,5 @@
 #user-logged-in {
-    color: dodgerblue;
+    color: tomato;
 }
 
 nav i {
@@ -9,11 +9,31 @@ nav i {
 .fa-trophy, .fa-chess, .fa-fire, .fa-camera{
     color: gold;
 }
-
+.fa-bullseye {
+    color: tomato;
+}
 nav {
     font-size: larger;
     align-items: center;
 }
 .navbar-nav {
     align-items: center;
+}
+
+#players-container {
+    height: 40%;
+    border: 1px solid;
+
+}
+
+#game-name {
+    text-align: center;
+    margin-top: 5px;
+    font-size: xx-large;
+    font-weight: 900;
+}
+
+#player-names {
+    text-align: center;
+    font-size: x-large;
 }
