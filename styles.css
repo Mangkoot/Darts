@@ -1,0 +1,19 @@
+#user-logged-in {
+    color: dodgerblue;
+}
+
+nav i {
+    margin-right: 5px;
+}
+
+.fa-trophy, .fa-chess, .fa-fire, .fa-camera{
+    color: gold;
+}
+
+nav {
+    font-size: larger;
+    align-items: center;
+}
+.navbar-nav {
+    align-items: center;
+}
