@@ -22,7 +22,6 @@ nav {
 
 #players-container {
     height: 40%;
-    border: 1px solid;
 
 }
 
@@ -33,7 +32,17 @@ nav {
     font-weight: 900;
 }
 
-#player-names {
+#player-names-stats {
     text-align: center;
     font-size: x-large;
+}
+
+#vs {
+    height: 6em;
+    margin: auto;
+
+} 
+.vs-ramme {
+    display: flex;
+    margin: auto;
 }
