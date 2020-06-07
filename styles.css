@@ -33,16 +33,29 @@ nav {
 }
 
 #player-names-stats {
-    text-align: center;
-    font-size: x-large;
+   
 }
 
 #vs {
-    height: 6em;
+    width: 100%;
     margin: auto;
 
 } 
 .vs-ramme {
     display: flex;
     margin: auto;
+}
+
+.profile-pic-container {
+    height: 150px;
+    margin-bottom: 10px;
+}
+.profile-pic-players {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.card span {
+    font-size: 1rem;
+    margin: 2px;
 }
