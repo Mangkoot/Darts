@@ -56,3 +56,16 @@ nav {
     font-size: 1rem;
     margin: 2px;
 }
+
+#player-names-stats {
+    margin-top: 10px;
+}
+#player1-score-rest, #player2-score-rest {
+    height: 50px;
+    font-size: x-large;
+    font-weight: 600;
+}
+
+#player1-score-label, #player2-score-label {
+    font-size: x-large;
+}

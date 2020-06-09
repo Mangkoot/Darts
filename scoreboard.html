@@ -39,11 +39,7 @@
       </div>
     </nav>
   <div class="container" id="players-container">
-    <div class="row">
-      <div class="col" id="game-name">501<hr></div>
-    </div>
-
-      <div class="row" id="player-names-stats">
+    <div class="row" id="player-names-stats">
         <div class="card text-center col-5" id="player1-info">
           <div class="card-header" id="player1-name">
            <h4> Player1 name</h4>
@@ -84,10 +80,25 @@
         </div>
         
       </div>
-      
+   </div>
+  </div>
+  <div class="container-fluid">
+    <div class="row">
+        <div class="col-12" id="game-name">501<hr></div>
+        <div class="col-6" id="player1-score-rest">
+          <label for="player1-score" id="player1-score-label" class="col-2 offset-1">Score: </label>
+          <input class="col-3" id="player1-score" type="number" name="player1-score" min="0" max="180"></input>
+          <span class="col-2 offset-1" id="resttext">Rest: </span>
+          <span class="col-3" id="player1-rest">501</span>
+        </div>
+        <div class="col-6" id="player2-score-rest">
+          <label for="player2-score" id="player2-score-label" class="col-2 offset-1">Score: </label>
+          <input class="col-3" id="player2-score" type="number" name="player2-score" min="0" max="180"></input>
+          <span class="col-2 offset-1" id="resttext">Rest: </span>
+          <span class="col-3" id="player2-rest">501</span>
+        </div>
 
-
-
+    </div>
 
   </div>
 
