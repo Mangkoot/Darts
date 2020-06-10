@@ -21,7 +21,7 @@ nav {
 }
 
 #players-container {
-    height: 40%;
+    height: 47%;
 
 }
 
@@ -61,11 +61,27 @@ nav {
     margin-top: 10px;
 }
 #player1-score-rest, #player2-score-rest {
-    height: 50px;
     font-size: x-large;
     font-weight: 600;
 }
 
 #player1-score-label, #player2-score-label {
+    font-size: x-large;
+}
+
+#score-input {
+    text-align: center;
+}
+
+#stats-now-player1, #stats-now-player2 {
+    font-size: x-large;
+}
+
+#player2-rest, #player1-rest {
+    font-size: xxx-large;
+}
+
+.scoreinput {
+    text-align: center;
     font-size: x-large;
 }
