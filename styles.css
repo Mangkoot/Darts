@@ -85,3 +85,19 @@ nav {
     text-align: center;
     font-size: x-large;
 }
+
+/*FOR MODAL*/
+
+
+#statsContainer {
+    min-width: 100%;
+    text-align: center;
+    height: 60%;
+}
+
+.playerName {
+    padding: 15px;
+    font-size: x-large;
+    font-weight: 600
+}
+/*MODAL END*/
