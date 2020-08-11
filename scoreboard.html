@@ -49,28 +49,37 @@
       </ul>
     </div>
   </nav>
+  <div class="container">
+    <div class="row">
+      <div class="col-12" id="game-name">501
+      </div>
+    </div>
+  </div>
   <div class="container-fluid" id="players-container">
     <div class="row" id="player-names-stats">
       <div class="card text-center col-5" id="player1-info">
         <div class="card-header" id="player1-name">
           <h4> Player1 name</h4>
         </div>
-        <div class="card-body">
-          <div class="profile-pic-container align-middle"><img class="profile-pic-players" src="img/rob1.jpg"></div>
-          <div class="col stats-today">
-
-          <h5 class="card-text">Today:</h5>
-          <span class="badge badge-info">180s: <span id="player1-today-180">3</span></span>
-          <span class="badge badge-info">Tons: <span id="player1-today-tons">15</span></span>
-          <span class="badge badge-info">High out: <span id="player1-today-high-out">112</span></span>
-          <span class="badge badge-info">Legs won: <span id="player1-today-legs">35</span></span>
-          <span class="badge badge-info">Sets won: <span id="player1-today-sets">3</span></span>
-        </div>
-          <hr>
-          <h5 class="card-text">All time:</h5>
-          <span class="badge badge-success">180s: <span id="player1-all-time-180">3</span></span>
-          <span class="badge badge-success">Tons: <span id="player1-all-time-tons">15</span></span>
-          <span class="badge badge-success">High out: <span id="player1-all-time-high-out">112</span></span>
+        <div class="card-body row">
+          <div class="profile-pic-container col-12 col-lg-6"><img class="profile-pic-players" src="img/rob1.jpg">
+          </div>
+          
+          <div class="col-12 col-lg-6 stats-today">
+            <!--Stats today-->
+            <h5 class="card-text">Today:</h5>
+            <span class="badge badge-info">180s: <span id="player1-today-180">3</span></span>
+            <span class="badge badge-info">Tons: <span id="player1-today-tons">15</span></span>
+            <span class="badge badge-info">High out: <span id="player1-today-high-out">112</span></span>
+            <span class="badge badge-info">Legs won: <span id="player1-today-legs">35</span></span>
+            <span class="badge badge-info">Sets won: <span id="player1-today-sets">3</span></span>
+            <!--Stats all time-->
+            <hr>
+            <h5 class="card-text">All time:</h5>
+            <span class="badge badge-success">180s: <span id="player1-all-time-180">3</span></span>
+            <span class="badge badge-success">Tons: <span id="player1-all-time-tons">15</span></span>
+            <span class="badge badge-success">High out: <span id="player1-all-time-high-out">112</span></span>
+          </div>
         </div>
       </div>
       <span class="vs-ramme col-2"><img id="vs" src="img/vs.png"></span>
@@ -78,21 +87,24 @@
         <div class="card-header" id="player2-name">
           <h4> Player2 name</h4>
         </div>
-        <div class="card-body">
-          <div class="profile-pic-container"><img class="profile-pic-players" src="img/daddy-o.jpg"></div>
-          <div class="col stats-today">
-          <h5 class="card-text">Today:</h5>
-          <span class="badge badge-info">180s: <span id="player2-today-180">3</span></span>
-          <span class="badge badge-info">Tons: <span id="player2-today-tons">15</span></span>
-          <span class="badge badge-info">High out: <span id="player2-today-high-out">112</span></span>
-          <span class="badge badge-info">Legs won: <span id="player2-today-legs">35</span></span>
-          <span class="badge badge-info">Sets won: <span id="player2-today-sets">3</span></span>
-        </div>
-          <hr>
-          <h5 class="card-text">All time:</h5>
-          <span class="badge badge-success">180s: <span id="player2-today-180">3</span></span>
-          <span class="badge badge-success">Tons: <span id="player2-today-tons">15</span></span>
-          <span class="badge badge-success">High out: <span id="player2-today-high-out">112</span></span>
+        <div class="card-body row">
+          <div class="profile-pic-container col-12 col-lg-6"><img class="profile-pic-players" src="img/daddy-o.jpg">
+          </div>
+          <div class="col-12 col-lg-6 stats-today">
+            <!--Stats today-->
+            <h5 class="card-text">Today:</h5>
+            <span class="badge badge-info">180s: <span id="player2-today-180">3</span></span>
+            <span class="badge badge-info">Tons: <span id="player2-today-tons">15</span></span>
+            <span class="badge badge-info">High out: <span id="player2-today-high-out">112</span></span>
+            <span class="badge badge-info">Legs won: <span id="player2-today-legs">35</span></span>
+            <span class="badge badge-info">Sets won: <span id="player2-today-sets">3</span></span>
+            <!--Stats all time-->
+            <hr>
+            <h5 class="card-text">All time:</h5>
+            <span class="badge badge-success">180s: <span id="player2-today-180">3</span></span>
+            <span class="badge badge-success">Tons: <span id="player2-today-tons">15</span></span>
+            <span class="badge badge-success">High out: <span id="player2-today-high-out">112</span></span>
+          </div>
         </div>
 
       </div>
@@ -102,9 +114,7 @@
   <div class="container-fluid">
     <div class="row" id="score-input">
       
-      <div class="col-12" id="game-name">501
-        <hr>
-      </div>
+      
       <div class="col-6" id="player1-score-rest">
         <form onsubmit="scoreCountP1()">
           <!--    <label for="player1-score" id="player1-score-label" class="col-12">Score: </label> -->
@@ -114,7 +124,7 @@
         </form>
         <!--    <div class="col-12" id="resttext">Rest: </div>-->
         <div class="col-12" id="player1-rest">501</div>
-        <div class="col-12 dartsLeft" id="player1-darts"><span>Darts so far: </span>0</div>
+        <div class="col-12 dartsLeft" id="player1-darts"><span>Darts so far: </span><span id="dartsThrownP1">0</span></div>
         <hr>
       </div>
 
@@ -127,7 +137,7 @@
         </form>
         <!--    <div class="col-12" id="resttext">Rest: </div> -->
         <div class="col-12" id="player2-rest">501</div>
-        <div class="col-12 dartsLeft" id="player2-darts"><span>Darts so far: </span>0</div>
+        <div class="col-12 dartsLeft" id="player2-darts"><span>Darts so far: </span><span id="dartsThrownP2">0</span></div>
         <hr>
       </div>
 
@@ -154,7 +164,7 @@
    <div class="row">
         <button type="button" class="btn btn-success col-xs-12 col-md-4" data-toggle="modal" data-target="#scoresheet-modal">Check scoresheet</button>
         <button type="button" class="btn btn-success col-xs-12 col-md-4">Re-edit score</button>
-        <button type="button" class="btn btn-success col-xs-12 col-md-4">Match is forfeit</button>
+        <button type="button" class="btn btn-success col-xs-12 col-md-4">Toggle checkout options</button>
     </div>
   </div>
   </footer>
@@ -179,7 +189,7 @@
               </div>
 
               <div class="col-6">
-                <table class="table">
+                <table class="table" id="fullScoresheetTable">
                   <thead>
                     <tr>
                       <th>Score</th>
@@ -190,7 +200,7 @@
                     </tr>
                   </thead>
                   <tbody>
-                    <tr>
+                   <!-- <tr>
                       <td id="player1Score3Darts">0</td>
                       <td id="player1Rest3Darts">501</td>
                       <td>3</td>
@@ -210,7 +220,7 @@
                       <td>9</td>
                       <td></td>
                       <td></td>
-                    </tr>
+                    </tr> -->
 
                   </tbody>
                 </table>
