@@ -1,0 +1,19 @@
+{
+  "name": "darts-2",
+  "version": "1.0.0",
+  "description": "Darts app",
+  "main": "js.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mangkoot/Darts.git"
+  },
+  "author": "Magnus Aune",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Mangkoot/Darts/issues"
+  },
+  "homepage": "https://github.com/Mangkoot/Darts#readme"
+}
