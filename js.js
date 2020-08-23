@@ -194,3 +194,118 @@ function dartsMath() {
     }
   }
 }
+let allScoresPlayer1 = []
+let allScoresPlayer2 = []
+
+function calculationP1() {
+  
+  let scoreP1 = $('#player1-score').val();
+  event.preventDefault();
+  let restP1 = $('#player1-rest').html();
+  let newRestP1 = restP1 - scoreP1;
+    if (newRestP1 > 0) {
+      $('#player1-rest').html(newRestP1);
+      $('#player1-score').val("");
+      $('#player2-score').focus();
+
+      let dartsP1 = parseInt($("#dartsThrownP1").text(), 10) + 3;
+      $("#dartsThrownP1").text(dartsP1);
+    }
+
+    // On checkout
+    else if (newRestP1 == 0) {
+      alert("Checkout!");
+      $('#player1-rest').html(newRestP1);
+      $('#player1-score').val("");
+    }
+    // On entering higher score than what's left
+    else {
+      alert("Du kan ikke skrive mer enn din restscore (" + restP1 + ")")
+}
+let dartsP1 = $('#dartsThrownP1').html()
+  let allScoresP1 = new Object();
+  allScoresP1.scoreP1 = scoreP1;
+  allScoresP1.restP1 = newRestP1;
+  allScoresP1.dartsP1 = dartsP1;
+  allScoresPlayer1.push(allScoresP1)
+ makeObject()
+}
+
+function calculationP2() {
+  
+  let scoreP2 = $('#player2-score').val();
+  event.preventDefault();
+  let restP2 = $('#player2-rest').html();
+  let newRestP2 = restP2 - scoreP2;
+    if (newRestP2 > 0) {
+      $('#player2-rest').html(newRestP2);
+      $('#player2-score').val("");
+      $('#player1-score').focus();
+
+      let dartsP2 = parseInt($("#dartsThrownP2").text(), 10) + 3;
+      $("#dartsThrownP2").text(dartsP2);
+    }
+
+    // On checkout
+    else if (newRestP2 == 0) {
+      alert("Checkout!");
+      $('#player2-rest').html(newRestP2);
+      $('#player2-score').val("");
+    }
+    // On entering higher score than what's left
+    else {
+      alert("Du kan ikke skrive mer enn din restscore (" + restP2 + ")")
+}
+let dartsP2 = $('#dartsThrownP2').html()
+  let allScoresP2 = new Object();
+  allScoresP2.scoreP2 = scoreP2;
+  allScoresP2.restP2 = newRestP2;
+  allScoresP2.dartsP2 = dartsP2;
+  allScoresPlayer2.push(allScoresP2)
+  makeObject()
+}
+
+/* let allScores = [{
+  "scoreP1": "",
+  "restP1": "",
+  "dartsP1": "",
+  "scoreP2": "",
+  "restP2": "",
+  "dartsP2": ""
+}]; */
+
+function makeObject() {
+  if (allScoresPlayer1.length = allScoresPlayer2.length) {
+    fillForm()
+}
+}
+
+function fillForm() {
+
+    let allScores = {
+    ...allScoresPlayer1,
+    ...allScoresPlayer2
+  }
+  console.log(allScores)
+  }
+  
+  
+  
+ 
+
+  /* let scoresheet = document.getElementById('fullScoresheetTable').getElementsByTagName('tbody')[0];
+
+      let newRowScoresheet = scoresheet.insertRow();
+      let newCellScoreP1 = newRowScoresheet.insertCell(0);
+      let newCellRestP1 = newRowScoresheet.insertCell(1);
+      let newCellDarts = newRowScoresheet.insertCell(2);
+      let newCellScoreP2 = newRowScoresheet.insertCell(3);
+      let newCellRestP2 = newRowScoresheet.insertCell(4);
+
+      let newScore = document.createTextNode(allScores.scoreP1);
+      newCellScoreP1.appendChild(newScore);
+
+      let newRest = document.createTextNode(allScores.restP1);
+      newCellRestP1.appendChild(newRest);
+    }
+ */
